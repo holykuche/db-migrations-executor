@@ -1,2 +1,2 @@
-export { DatabaseClient, MigrationsExecutor } from "./api";
-export { MigrationsExecutorImpl } from "./impl";
+export { DatabaseClient, MigrationsExecutor } from "./src/api";
+export { MigrationsExecutorImpl } from "./src/impl";
