@@ -2,7 +2,9 @@
   "name": "db-migrations-executor",
   "version": "1.0.0",
   "description": "A library for database migrations execution",
-  "scripts": {},
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "webpack"
   },
