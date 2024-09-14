@@ -29,6 +29,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
     },
     plugins: [
+        // todo: need to fix
         new DeclarationBundlerPlugin({
             moduleName: "\"db-migrations-executor\"",
             out: "./index.d.ts"
