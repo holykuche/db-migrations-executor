@@ -1,12 +1,11 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const DeclarationBundlerPlugin = require("types-webpack-bundler")
 
 module.exports = {
     mode: "production",
     target: "node",
     entry: [
-        path.resolve(__dirname, "index.ts"),
+        path.resolve(__dirname, "src", "index.ts"),
     ],
     module: {
         rules: [
@@ -26,14 +25,9 @@ module.exports = {
     },
     output: {
         filename: "index.js",
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "dist", "lib"),
     },
     plugins: [
-        // todo: need to fix
-        new DeclarationBundlerPlugin({
-            moduleName: "\"db-migrations-executor\"",
-            out: "./index.d.ts"
-        }),
         new CleanWebpackPlugin(),
     ],
 };

@@ -1,25 +1,31 @@
 {
-  "name": "db-migrations-executor",
+  "name": "@holykuche/db-migrations-executor",
   "version": "1.0.0",
   "description": "A library for database migrations execution",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "author": "Nikita Temnikov",
+  "license": "MIT",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/holykuche/db-migrations-executor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holykuche/db-migrations-executor.git"
+  },
+  "main": "./dist/lib/index.js",
+  "types": "./dist/lib/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "webpack"
   },
-  "author": "Nikita Temnikov",
-  "license": "ISC",
-  "keywords": [],
-  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20.1.0",
     "clean-webpack-plugin": "^4.0.0",
     "ts-loader": "^9.4.2",
-    "types-webpack-bundler": "^1.0.2",
     "typescript": "^4.7.2",
     "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-merge": "^5.8.0"
+    "webpack-cli": "^5.0.1"
   }
 }
