@@ -1,12 +1,12 @@
 # Installation
 
 ### via npm
-```console
+```shell
 npm install @holykuche/db-migrations-executor
 ```
 
 ### via yarn
-```console
+```shell
 yarn add @holykuche/db-migrations-executor
 ```
 
@@ -30,3 +30,5 @@ new MigrationsExecutorImpl(dbClient)
     .then(() => console.log('Migration completed successfully'))
     .catch(error => console.error(error));
 ```
+
+Also, you can find a usage example [here](https://github.com/holykuche/planning-poker/tree/microservice) (see ``poker`` and ``telegram`` modules).
