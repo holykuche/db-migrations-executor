@@ -4,7 +4,7 @@
   "description": "A library for database migrations execution",
   "author": "Nikita Temnikov",
   "license": "MIT",
-  "keywords": [],
+  "keywords": ["db", "database", "migration"],
   "bugs": {
     "url": "https://github.com/holykuche/db-migrations-executor/issues"
   },
