@@ -1,13 +1,17 @@
 # Installation
 
 ### via npm
-``npm install @holykuche/db-migrations-executor``
+```console
+npm install @holykuche/db-migrations-executor
+```
 
 ### via yarn
-``yarn add @holykuche/db-migrations-executor``
+```console
+yarn add @holykuche/db-migrations-executor
+```
 
 # Usage
-```
+```js
 import { DatabaseClient, MigrationsExecutorImpl } from '@holykuche/db-migrations-executor';
 
 // Implement DatabaseClient. You can use any database management system in theory.
