@@ -15,13 +15,14 @@ yarn add @holykuche/db-migrations-executor
 import { DatabaseClient, MigrationsExecutorImpl } from '@holykuche/db-migrations-executor';
 
 // Implement DatabaseClient. You can use any database management system in theory.
-// But the API imply relational databases usage.
+// But the API implies relational databases usage.
 const dbClient: DatabaseClient = {
   // your implementation
 };
 
-// Copy your migration scripts in a distributive directory
-// each time while building process.
+// Keep your migration scripts in a distributive directory fresh.
+// For example, you might copy migration scripts into a distributive
+// directory each time while building process.
 // Set this constant to relative path to migrations.
 const MIGRATION_SCRIPTS_DIR = 'migration-scripts';
 
