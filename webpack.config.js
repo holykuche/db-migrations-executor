@@ -26,6 +26,8 @@ module.exports = {
     output: {
         filename: "index.js",
         path: path.resolve(__dirname, "dist", "lib"),
+        library: "@holykuche/db-migrations-executor",
+        libraryTarget: "umd"
     },
     plugins: [
         new CleanWebpackPlugin(),
