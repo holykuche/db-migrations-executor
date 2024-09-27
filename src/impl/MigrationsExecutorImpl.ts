@@ -119,8 +119,7 @@ export default class MigrationsExecutorImpl implements MigrationsExecutor {
             let failureReason = "";
 
             try {
-                // todo: maybe there is a better solution for filepath resolving
-                await this.executeMigration("file:\\\\" + resolve(dirname, filename));
+                await this.executeMigration(resolve(dirname, filename));
                 console.log(`New migration ${ filename } is successfully applied`);
             } catch (error) {
                 if (error instanceof Error) {
