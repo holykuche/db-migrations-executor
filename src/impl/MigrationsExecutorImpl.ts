@@ -21,7 +21,7 @@ export default class MigrationsExecutorImpl implements MigrationsExecutor {
     async execute(migrationsTableName: string, migrationsDirname: string): Promise<void> {
         try {
             await this.initializeMigrationHistoryTable(migrationsTableName);
-            console.log(`${ migrationsTableName } table successfully initialized`);
+            console.log(`${ migrationsTableName } table has been successfully initialized`);
         } catch (error) {
             if (error instanceof MigrationHistoryTableAlreadyExistsError) {
                 console.log(error.message);
@@ -112,7 +112,7 @@ export default class MigrationsExecutorImpl implements MigrationsExecutor {
 
         for (const filename of sortedFilenames) {
             if (records.find(r => r.file_name === filename)) {
-                console.log(`Migration ${ filename } was already applied`);
+                console.log(`Migration ${ filename } has been already applied`);
                 return;
             }
 
@@ -120,7 +120,7 @@ export default class MigrationsExecutorImpl implements MigrationsExecutor {
 
             try {
                 await this.executeMigration(resolve(dirname, filename));
-                console.log(`New migration ${ filename } is successfully applied`);
+                console.log(`New migration ${ filename } has been successfully applied`);
             } catch (error) {
                 if (error instanceof Error) {
                     failureReason = error.message;

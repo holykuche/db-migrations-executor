@@ -28,7 +28,7 @@ const MIGRATION_SCRIPTS_DIR = 'migration-scripts';
 
 new MigrationsExecutorImpl(dbClient)
     .execute('migrations', resolve(__dirname, MIGRATION_SCRIPTS_DIR))
-    .then(() => console.log('Migration completed successfully'))
+    .then(() => console.log('Migrations completed successfully'))
     .catch(error => console.error(error));
 ```
 
