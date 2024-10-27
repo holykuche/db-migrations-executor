@@ -8,7 +8,7 @@ export default interface DatabaseClient {
 
     isTableExists(tableName: string): Promise<boolean>;
 
-    find<T extends object, K extends keyof T>(tableName: string, key: K, value: T[ K ]): Promise<T>;
+    find<T extends object, K extends keyof T>(tableName: string, key: K, value: T[ K ]): Promise<T | null>;
 
     findMany<T extends object, K extends keyof T>(tableName: string, key: K, value: T[ K ]): Promise<T[]>;
 
